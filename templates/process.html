@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}What to do next?{% endblock %}</title>
+  </head>
+  <body>
+      <h1>Process Method</h1>
+  <form method="POST">
+    {{ form.hidden_tag() }}
+    <p>{{ form.methodname.label }}<br>{{ form.methodname() }}</p>
+    <p>{{ form.submit() }}</p>
+  </form>
+  </body>
+</html>
